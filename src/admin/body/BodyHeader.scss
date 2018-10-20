@@ -1,0 +1,26 @@
+.body-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__left {
+        h4 {
+            display: inline-block;
+            padding-right: 20px;
+            margin-right: 21px;
+            position: relative;
+            margin-bottom: 0;
+            &::after {
+                position: absolute;
+                right: 0;
+                top: -10%;
+                height: 120%;
+                width: 1px;
+                background-color: #6c757d;
+                content: '';
+            }
+        }
+        span {
+            color: #6c757d;
+            display: inline-block;
+        }
+    }
+}

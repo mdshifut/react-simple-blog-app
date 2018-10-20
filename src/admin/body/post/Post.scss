@@ -1,0 +1,55 @@
+.post-controller {
+    background-color: #05B085;
+    color: #fff;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__btn {
+        color: #fff;
+        border-color: #fff;
+    }
+    &__input {
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff !important;
+        &::placeholder {
+            color: #fff;
+        }
+        &:focus {
+            background-color: transparent;
+            box-shadow: none;
+            border-color: #FFD13F;
+            border-left-color: #fff;
+        }
+    }
+}
+
+.post-table {
+    background-color: #414755;
+}
+
+.post-table.table thead th {
+    border-top: none;
+}
+
+.post-table.table th,
+.post-table.table td {
+    border-color: #6c757d;
+}
+
+.button-wrapper button {
+    display: inline-block;
+    &:hover {
+        color: #fff;
+    }
+}
+
+// .button-wrapper {
+//     min-width: 140px;
+//     text-align: right;
+// }
+.table td:last-child,
+.table th:last-child {
+    min-width: 170px;
+    text-align: center;
+}
