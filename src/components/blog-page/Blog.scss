@@ -100,6 +100,11 @@
             font-style: italic;
         }
     }
+    &.hero-post {
+        .single-blog-post__image {
+            height: 500px;
+        }
+    }
 }
 
 .main-footer {
