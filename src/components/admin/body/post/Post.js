@@ -112,12 +112,8 @@ class Post extends Component {
                     Search by
                   </button>
                   <div className="dropdown-menu" ref={this.dropdownMenu}>
-                    <a href="#" className="dropdown-item">
-                      Category
-                    </a>
-                    <a href="#" className="dropdown-item">
-                      Title
-                    </a>
+                    <button className="dropdown-item">Category</button>
+                    <button className="dropdown-item">Title</button>
                   </div>
                 </div>
                 <input
@@ -138,13 +134,12 @@ class Post extends Component {
             </div>
           </div>
         </div>
-        {this.state.posts.length && (
-          <PostsTable
-            posts={this.state.posts}
-            editButtonHandeler={this.editButtonHandeler}
-            deleteButtonHandeler={this.deleteButtonHandeler}
-          />
-        )}
+
+        <PostsTable
+          posts={this.state.posts}
+          editButtonHandeler={this.editButtonHandeler}
+          deleteButtonHandeler={this.deleteButtonHandeler}
+        />
       </React.Fragment>
     );
   }

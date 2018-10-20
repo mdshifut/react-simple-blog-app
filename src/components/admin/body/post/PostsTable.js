@@ -4,8 +4,6 @@ let CreateRow = props => {
   return (
     <tr>
       <td>{props.post.title}</td>
-      {/* <td>{props.post.content}</td> */}
-      {/* <td>{props.post.imageURL}</td> */}
       <td>{props.post.category}</td>
       <td>{props.post.author}</td>
       <td>{props.post.publish}</td>
@@ -36,8 +34,6 @@ class PostsTable extends Component {
         <thead>
           <tr>
             <th>Title</th>
-            {/* <th>Content</th> */}
-            {/* <th>Image Url</th> */}
             <th>Category</th>
             <th>Author</th>
             <th>Publish On</th>
