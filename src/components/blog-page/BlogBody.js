@@ -7,13 +7,23 @@ class BlogBody extends Component {
   state = {
     posts: []
   };
-  componentDidMount() {
-    axios
-      .get(`http://localhost:3000/${this.props.navigator}`)
-      .then(response => this.setState({ posts: response.data }));
 
-    console.log(this.props.navigator);
+  fetchData(navigator) {
+    axios
+      .get(`http://localhost:3000/${navigator}`)
+      .then(response => this.setState({ posts: response.data }));
   }
+  componentDidMount() {
+    this.fetchData(this.props.navigator);
+  }
+
+  componentDidUpdate(prevProps) {
+    // Typical usage (don't forget to compare props):
+    if (this.props.navigator !== prevProps.navigator) {
+      this.fetchData(this.props.navigator);
+    }
+  }
+
   render() {
     return (
       <div className="section-padding">
