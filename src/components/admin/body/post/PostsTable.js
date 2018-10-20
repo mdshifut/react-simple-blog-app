@@ -32,7 +32,7 @@ let CreateRow = props => {
 class PostsTable extends Component {
   render() {
     return (
-      <table className="table table-hover post-table table-responsive">
+      <table className="table table-hover post-table">
         <thead>
           <tr>
             <th>Title</th>
