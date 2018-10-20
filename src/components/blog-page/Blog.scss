@@ -3,6 +3,28 @@
     padding: 60px 0;
 }
 
+.main-nav {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
+    padding: 10px 0;
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-left: -15px;
+        li {
+            display: inline-block;
+            padding: 7px 15px;
+            transition: 0.3s;
+            cursor: pointer;
+            &:hover {
+                color: #F2132D;
+            }
+        }
+    }
+}
+
 .blog-home {
     font-family: 'Lato', sans-serif;
     background-color: #F5F6F8;

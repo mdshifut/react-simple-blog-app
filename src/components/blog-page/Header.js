@@ -7,7 +7,7 @@ class Header extends Component {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center text-uppercase">
-              <div class="blog-home__main-header__text">
+              <div className="blog-home__main-header__text">
                 React
                 <h3>Blogger</h3>
                 Simple blogger template
