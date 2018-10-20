@@ -4,7 +4,7 @@ import { faGhost, faHome } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Admin from './components/admin/Admin';
-import BlogHome from './components/blog/BlogHome';
+import BlogHome from './components/blog-page/BlogHome';
 
 library.add(faGhost, faHome);
 class App extends Component {
