@@ -5,7 +5,8 @@ import axios from 'axios';
 
 class PostForms extends Component {
   state = {
-    post: {}
+    post: {},
+    categories: []
   };
 
   onChange = event => {
@@ -45,6 +46,10 @@ class PostForms extends Component {
   };
 
   componentDidMount() {
+    axios
+      .get('http://localhost:3000/categories')
+      .then(response => this.setState({ categories: response.data }));
+
     if (this.props.editPost) {
       this.setState({
         post: { ...this.props.editPost }
@@ -78,11 +83,14 @@ class PostForms extends Component {
               label: 'Select post category',
 
               onChange: this.onChange,
-              options: categories.map(category => {
+              options: this.state.categories.map(category => {
                 let option = {};
                 option.value = category;
                 option.text = category;
-                if (this.props.post && this.props.post.category === category) {
+                if (
+                  this.props.editPost &&
+                  this.props.editPost.category === category
+                ) {
                   option.isSelected = true;
                 }
                 return option;
