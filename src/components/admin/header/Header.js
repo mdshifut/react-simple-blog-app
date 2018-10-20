@@ -10,7 +10,7 @@ class Header extends Component {
           </div>
           <div className="col-md-9 text-right">
             <div className="main-header__right">
-              <a href="index.html" className="blog-page">
+              <a href="/" className="blog-page">
                 Go to blog page
               </a>
             </div>

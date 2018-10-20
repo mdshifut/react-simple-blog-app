@@ -58,7 +58,6 @@ class PostForms extends Component {
   }
 
   render() {
-    let categories = ['Genarel', 'Career', 'Finance', 'Sports', 'Seo', 'Food'];
     return (
       <Modal
         title="Create new post"
